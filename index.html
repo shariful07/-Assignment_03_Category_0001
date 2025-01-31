@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'black-1': '#111',
+                    },
+                    fontFamily: {
+                        adlam: ['ADLaM Display', 'serif'],
+                        sora: ['Sora', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
-<body>
-    
+
+<body class="font-sora text-black-1">
+    <!-- Start Header -->
+    <header class="bg-[#FFF9F4] h-24 flex items-center justify-start px-5">
+        <nav class="max-w-[var(--max-width)] w-full mx-auto flex items-center justify-between">
+            <h1 class="flex text-black-1 items-center">
+                <img class="mr-1" src="./images/logo-header.png" alt="">
+                <p class="text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</p> 
+            </h1>
+            <ul class="flex gap-4 text-xl">
+                <li><a href="">Find a pet</a></li>
+                <li><a href="">Breeds</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+            <div>
+                <a href=""><img src="./images/" alt=""></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Start Main Content -->
+    <main>
+
+    </main>
+
+    <!-- Start Footer -->
+    <footer>
+
+    </footer>
 </body>
+
 </html>

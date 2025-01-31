@@ -1,0 +1,30 @@
+/* Default Settings */
+
+body {
+    background: #fff;
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Shared Style */
+:root {
+    --max-width: 1320px;
+}
