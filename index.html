@@ -34,20 +34,24 @@
 
 <body class="font-sora text-black-1">
     <!-- Start Header -->
-    <header class="bg-[#FFF9F4] h-24 flex items-center justify-start px-5">
+    <header class="bg-[#FFF9F4] h-24 max-md:h-16 flex items-center justify-start px-5">
         <nav class="max-w-[var(--max-width)] w-full mx-auto flex items-center justify-between">
             <h1 class="flex text-black-1 items-center">
                 <img class="mr-1" src="./images/logo-header.png" alt="">
-                <p class="text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</p> 
+                <p class="text-2xl max-md:hidden">Browse<span class="text-[#FFDC26]">4</span>Pets</p> 
             </h1>
-            <ul class="flex gap-4 text-xl">
+            <ul class="flex gap-4 text-xl max-md:hidden">
                 <li><a href="">Find a pet</a></li>
                 <li><a href="">Breeds</a></li>
                 <li><a href="">Contact us</a></li>
             </ul>
-            <div>
-                <a href=""><img src="./images/" alt=""></a>
+            <div class="flex items-center max-md:hidden">
+                <a class="mr-2" href=""><img src="./images/bell.png" alt=""></a>
+                <a class="mr-2" href=""><img src="./images/search.png" alt=""></a>
+                <button class="mr-2 px-7 py-2 rounded-lg bg-[#fff] border border-[#FFDC26]">Login</button>
+                <button class="mr-2  px-7 py-2 rounded-lg bg-[#FFDC26] border border-[#FFDC26]">Register</button>
             </div>
+            <a class="md:hidden" href=""><img src="./images/bars.png" alt=""></a>
         </nav>
     </header>
 
